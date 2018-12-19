@@ -17,6 +17,8 @@
 		69C8724321CA984F00F6B004 /* core.23.db in Resources */ = {isa = PBXBuildFile; fileRef = 69C8724221CA984F00F6B004 /* core.23.db */; };
 		69C8724521CA9E9E00F6B004 /* GCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8724421CA9E9E00F6B004 /* GCViewController.swift */; };
 		69C8724721CAA09B00F6B004 /* GC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8724621CAA09B00F6B004 /* GC.swift */; };
+		69C8724921CAA51000F6B004 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8724821CAA51000F6B004 /* TalkViewController.swift */; };
+		69C8724B21CAA58900F6B004 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8724A21CAA58900F6B004 /* Talk.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		69C8724221CA984F00F6B004 /* core.23.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = core.23.db; sourceTree = "<group>"; };
 		69C8724421CA9E9E00F6B004 /* GCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCViewController.swift; sourceTree = "<group>"; };
 		69C8724621CAA09B00F6B004 /* GC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GC.swift; sourceTree = "<group>"; };
+		69C8724821CAA51000F6B004 /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
+		69C8724A21CAA58900F6B004 /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
 		D217BC9F0BB1F1ABFF2134DB /* Pods-Final Exam Mizobuchi Sou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Exam Mizobuchi Sou.release.xcconfig"; path = "Pods/Target Support Files/Pods-Final Exam Mizobuchi Sou/Pods-Final Exam Mizobuchi Sou.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				69C8724621CAA09B00F6B004 /* GC.swift */,
+				69C8724A21CAA58900F6B004 /* Talk.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 			children = (
 				692C6EA521CA8E4B00DA6A4E /* DBViewControoler.swift */,
 				69C8724421CA9E9E00F6B004 /* GCViewController.swift */,
+				69C8724821CAA51000F6B004 /* TalkViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,10 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C8724B21CAA58900F6B004 /* Talk.swift in Sources */,
 				692C6EA621CA8E4B00DA6A4E /* DBViewControoler.swift in Sources */,
 				69C8724121CA97A400F6B004 /* DBService.swift in Sources */,
 				69C8724521CA9E9E00F6B004 /* GCViewController.swift in Sources */,
 				69C8724721CAA09B00F6B004 /* GC.swift in Sources */,
+				69C8724921CAA51000F6B004 /* TalkViewController.swift in Sources */,
 				695E186021CA8A1600F7DD1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

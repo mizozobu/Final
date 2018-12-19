@@ -13,12 +13,25 @@ class GCViewController: UITableViewController {
     // Mark - constant
     private struct StoryBoard {
         static let GCCellIdentifier = "GCCellIdentifier"
+        static let ShowTalksSegueIdentifier = "ShowTalksSegueIdentifier"
     }
     
     
     // Mark - property
     private let db = DBService.sharedDB
     private var gcs = [GC]()
+    
+    // Mark - view life cycyle
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == StoryBoard.ShowTalksSegueIdentifier {
+            if let talkVC = segue.destination as? TalkViewController {
+                if let indexPath = sender as? IndexPath {
+                    print(gcs[indexPath.row].ID)
+                    talkVC.gcID = gcs[indexPath.row].ID
+                }
+            }
+        }
+    }
     
     // Mark - table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,17 +47,7 @@ class GCViewController: UITableViewController {
     }
     
     // Mark - table view delegate
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let id = items[indexPath.row].id
-//        if let i = id {
-//            do {
-//                try db.setItemToDone(i)
-//                items.remove(at: indexPath.row)
-//                self.tableView.reloadSections(NSIndexSet(index: 0) as IndexSet, with: UITableView.RowAnimation.right)
-//            }
-//            catch {
-//                print("Error in set item \(i) to done")
-//            }
-//        }
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: StoryBoard.ShowTalksSegueIdentifier, sender: indexPath)
+    }
 }

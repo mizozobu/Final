@@ -46,11 +46,4 @@ class GC : Record {
         
         super.init(row: row)
     }
-    
-//    override func encode(to container: inout PersistenceContainer) {
-//        container["id"] = id
-//        container["name"] = name
-//        container["isDone"] = isDone
-//    }
 }
-

@@ -72,6 +72,31 @@ class DBService {
             return []
         }
     }
+    
+    public func findAllTalksForConfID(_ id: Int) -> [Talk] {
+        do {
+            
+            let talks = try dbQueue.inDatabase { (db: Database) -> [Talk] in
+                var talks = [Talk]()
+                let rows = try Row.fetchCursor(db, """
+                        SELECT t.ID, t.Title, s.Description \
+                        FROM talk t JOIN conference_talk c JOIN conf_session s \
+                        WHERE t.ID-c.TalkID AND c.SessionID=s.ID AND s.ConferenceID=? \
+                        ORDER BY s.Sequence, c.Sequence;
+                    """, arguments: [id], adapter: nil
+                )
+                
+                while let row = try rows.next() {
+                    talks.append(Talk(row: row))
+                }
+                return talks
+            }
+            return talks
+        }
+        catch {
+            return []
+        }
+    }
 }
 
 extension String: Error {}
