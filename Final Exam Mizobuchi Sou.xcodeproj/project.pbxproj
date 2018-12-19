@@ -10,12 +10,13 @@
 		0F9057A7E4D0C4601674280C /* Pods_Final_Exam_Mizobuchi_Sou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A3A63D2842EBB7D3793545 /* Pods_Final_Exam_Mizobuchi_Sou.framework */; };
 		692C6EA621CA8E4B00DA6A4E /* DBViewControoler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692C6EA521CA8E4B00DA6A4E /* DBViewControoler.swift */; };
 		695E186021CA8A1600F7DD1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E185F21CA8A1600F7DD1C /* AppDelegate.swift */; };
-		695E186221CA8A1600F7DD1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E186121CA8A1600F7DD1C /* ViewController.swift */; };
 		695E186521CA8A1600F7DD1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695E186321CA8A1600F7DD1C /* Main.storyboard */; };
 		695E186721CA8A1600F7DD1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695E186621CA8A1600F7DD1C /* Assets.xcassets */; };
 		695E186A21CA8A1600F7DD1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695E186821CA8A1600F7DD1C /* LaunchScreen.storyboard */; };
 		69C8724121CA97A400F6B004 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8724021CA97A400F6B004 /* DBService.swift */; };
 		69C8724321CA984F00F6B004 /* core.23.db in Resources */ = {isa = PBXBuildFile; fileRef = 69C8724221CA984F00F6B004 /* core.23.db */; };
+		69C8724521CA9E9E00F6B004 /* GCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8724421CA9E9E00F6B004 /* GCViewController.swift */; };
+		69C8724721CAA09B00F6B004 /* GC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8724621CAA09B00F6B004 /* GC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,13 +25,14 @@
 		692C6EA521CA8E4B00DA6A4E /* DBViewControoler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBViewControoler.swift; sourceTree = "<group>"; };
 		695E185C21CA8A1600F7DD1C /* Final Exam Mizobuchi Sou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Exam Mizobuchi Sou.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		695E185F21CA8A1600F7DD1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		695E186121CA8A1600F7DD1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		695E186421CA8A1600F7DD1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		695E186621CA8A1600F7DD1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		695E186921CA8A1600F7DD1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		695E186B21CA8A1600F7DD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69C8724021CA97A400F6B004 /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
 		69C8724221CA984F00F6B004 /* core.23.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = core.23.db; sourceTree = "<group>"; };
+		69C8724421CA9E9E00F6B004 /* GCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCViewController.swift; sourceTree = "<group>"; };
+		69C8724621CAA09B00F6B004 /* GC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GC.swift; sourceTree = "<group>"; };
 		D217BC9F0BB1F1ABFF2134DB /* Pods-Final Exam Mizobuchi Sou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Exam Mizobuchi Sou.release.xcconfig"; path = "Pods/Target Support Files/Pods-Final Exam Mizobuchi Sou/Pods-Final Exam Mizobuchi Sou.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 		692C6EA021CA8AA700DA6A4E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				69C8724621CAA09B00F6B004 /* GC.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,8 +85,8 @@
 		692C6EA121CA8AAE00DA6A4E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				695E186121CA8A1600F7DD1C /* ViewController.swift */,
 				692C6EA521CA8E4B00DA6A4E /* DBViewControoler.swift */,
+				69C8724421CA9E9E00F6B004 /* GCViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,7 +255,8 @@
 			files = (
 				692C6EA621CA8E4B00DA6A4E /* DBViewControoler.swift in Sources */,
 				69C8724121CA97A400F6B004 /* DBService.swift in Sources */,
-				695E186221CA8A1600F7DD1C /* ViewController.swift in Sources */,
+				69C8724521CA9E9E00F6B004 /* GCViewController.swift in Sources */,
+				69C8724721CAA09B00F6B004 /* GC.swift in Sources */,
 				695E186021CA8A1600F7DD1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -53,6 +53,25 @@ class DBService {
             return ""
         }
     }
+    
+    public func findAllGCs() -> [GC] {
+        do {
+            
+            let gcs = try dbQueue.inDatabase { (db: Database) -> [GC] in
+                var gcs = [GC]()
+                let rows = try Row.fetchCursor(db, "SELECT * FROM conference ORDER BY IssueDate DESC")
+                
+                while let row = try rows.next() {
+                    gcs.append(GC(row: row))
+                }
+                return gcs
+            }
+            return gcs
+        }
+        catch {
+            return []
+        }
+    }
 }
 
 extension String: Error {}
