@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F9057A7E4D0C4601674280C /* Pods_Final_Exam_Mizobuchi_Sou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A3A63D2842EBB7D3793545 /* Pods_Final_Exam_Mizobuchi_Sou.framework */; };
+		692C6EA621CA8E4B00DA6A4E /* DBViewControoler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692C6EA521CA8E4B00DA6A4E /* DBViewControoler.swift */; };
 		695E186021CA8A1600F7DD1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E185F21CA8A1600F7DD1C /* AppDelegate.swift */; };
 		695E186221CA8A1600F7DD1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E186121CA8A1600F7DD1C /* ViewController.swift */; };
 		695E186521CA8A1600F7DD1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695E186321CA8A1600F7DD1C /* Main.storyboard */; };
 		695E186721CA8A1600F7DD1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695E186621CA8A1600F7DD1C /* Assets.xcassets */; };
 		695E186A21CA8A1600F7DD1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695E186821CA8A1600F7DD1C /* LaunchScreen.storyboard */; };
+		69C8724121CA97A400F6B004 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8724021CA97A400F6B004 /* DBService.swift */; };
+		69C8724321CA984F00F6B004 /* core.23.db in Resources */ = {isa = PBXBuildFile; fileRef = 69C8724221CA984F00F6B004 /* core.23.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42D296F348715EB790CCFA5A /* Pods-Final Exam Mizobuchi Sou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Exam Mizobuchi Sou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Final Exam Mizobuchi Sou/Pods-Final Exam Mizobuchi Sou.debug.xcconfig"; sourceTree = "<group>"; };
+		45A3A63D2842EBB7D3793545 /* Pods_Final_Exam_Mizobuchi_Sou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_Exam_Mizobuchi_Sou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		692C6EA521CA8E4B00DA6A4E /* DBViewControoler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBViewControoler.swift; sourceTree = "<group>"; };
 		695E185C21CA8A1600F7DD1C /* Final Exam Mizobuchi Sou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Exam Mizobuchi Sou.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		695E185F21CA8A1600F7DD1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		695E186121CA8A1600F7DD1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		695E186621CA8A1600F7DD1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		695E186921CA8A1600F7DD1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		695E186B21CA8A1600F7DD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C8724021CA97A400F6B004 /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
+		69C8724221CA984F00F6B004 /* core.23.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = core.23.db; sourceTree = "<group>"; };
+		D217BC9F0BB1F1ABFF2134DB /* Pods-Final Exam Mizobuchi Sou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Exam Mizobuchi Sou.release.xcconfig"; path = "Pods/Target Support Files/Pods-Final Exam Mizobuchi Sou/Pods-Final Exam Mizobuchi Sou.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9057A7E4D0C4601674280C /* Pods_Final_Exam_Mizobuchi_Sou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050E8066DCCD3ADB9951611A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42D296F348715EB790CCFA5A /* Pods-Final Exam Mizobuchi Sou.debug.xcconfig */,
+				D217BC9F0BB1F1ABFF2134DB /* Pods-Final Exam Mizobuchi Sou.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F6DEB8105CC66936EBD6718 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45A3A63D2842EBB7D3793545 /* Pods_Final_Exam_Mizobuchi_Sou.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		692C6E9E21CA8A9200DA6A4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				695E186821CA8A1600F7DD1C /* LaunchScreen.storyboard */,
+				695E186321CA8A1600F7DD1C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		692C6EA021CA8AA700DA6A4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		692C6EA121CA8AAE00DA6A4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				695E186121CA8A1600F7DD1C /* ViewController.swift */,
+				692C6EA521CA8E4B00DA6A4E /* DBViewControoler.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		692C6EA921CA923C00DA6A4E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				69C8724021CA97A400F6B004 /* DBService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		695E185321CA8A1500F7DD1C = {
 			isa = PBXGroup;
 			children = (
 				695E185E21CA8A1600F7DD1C /* Final Exam Mizobuchi Sou */,
 				695E185D21CA8A1600F7DD1C /* Products */,
+				050E8066DCCD3ADB9951611A /* Pods */,
+				4F6DEB8105CC66936EBD6718 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +117,13 @@
 		695E185E21CA8A1600F7DD1C /* Final Exam Mizobuchi Sou */ = {
 			isa = PBXGroup;
 			children = (
+				692C6EA921CA923C00DA6A4E /* Service */,
+				692C6EA121CA8AAE00DA6A4E /* Controller */,
+				692C6EA021CA8AA700DA6A4E /* Model */,
+				692C6E9E21CA8A9200DA6A4E /* View */,
 				695E185F21CA8A1600F7DD1C /* AppDelegate.swift */,
-				695E186121CA8A1600F7DD1C /* ViewController.swift */,
-				695E186321CA8A1600F7DD1C /* Main.storyboard */,
 				695E186621CA8A1600F7DD1C /* Assets.xcassets */,
-				695E186821CA8A1600F7DD1C /* LaunchScreen.storyboard */,
+				69C8724221CA984F00F6B004 /* core.23.db */,
 				695E186B21CA8A1600F7DD1C /* Info.plist */,
 			);
 			path = "Final Exam Mizobuchi Sou";
@@ -71,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 695E186E21CA8A1600F7DD1C /* Build configuration list for PBXNativeTarget "Final Exam Mizobuchi Sou" */;
 			buildPhases = (
+				E8A11863731B0F08B3D4927A /* [CP] Check Pods Manifest.lock */,
 				695E185821CA8A1600F7DD1C /* Sources */,
 				695E185921CA8A1600F7DD1C /* Frameworks */,
 				695E185A21CA8A1600F7DD1C /* Resources */,
+				0CD2EB744010977F9EC51B75 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,17 +191,67 @@
 			files = (
 				695E186A21CA8A1600F7DD1C /* LaunchScreen.storyboard in Resources */,
 				695E186721CA8A1600F7DD1C /* Assets.xcassets in Resources */,
+				69C8724321CA984F00F6B004 /* core.23.db in Resources */,
 				695E186521CA8A1600F7DD1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CD2EB744010977F9EC51B75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Final Exam Mizobuchi Sou/Pods-Final Exam Mizobuchi Sou-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Final Exam Mizobuchi Sou/Pods-Final Exam Mizobuchi Sou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8A11863731B0F08B3D4927A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Final Exam Mizobuchi Sou-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		695E185821CA8A1600F7DD1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				692C6EA621CA8E4B00DA6A4E /* DBViewControoler.swift in Sources */,
+				69C8724121CA97A400F6B004 /* DBService.swift in Sources */,
 				695E186221CA8A1600F7DD1C /* ViewController.swift in Sources */,
 				695E186021CA8A1600F7DD1C /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +397,7 @@
 		};
 		695E186F21CA8A1600F7DD1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42D296F348715EB790CCFA5A /* Pods-Final Exam Mizobuchi Sou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +416,7 @@
 		};
 		695E187021CA8A1600F7DD1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D217BC9F0BB1F1ABFF2134DB /* Pods-Final Exam Mizobuchi Sou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
