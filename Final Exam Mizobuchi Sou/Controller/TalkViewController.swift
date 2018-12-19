@@ -13,12 +13,24 @@ class TalkViewController: UITableViewController {
     // Mark - constant
     private struct StoryBoard {
         static let TalkCellIdentifier = "TalkCellIdentifier"
+        static let ShowContentIdentifier = "ShowContentIdentifier"
     }
     
     // Mark - property
     private let db = DBService.sharedDB
-    var gcID: Int = 0
+    var gcID: Int = 143
     private var talks = [Talk]()
+    
+    // Mark - view life cycyle
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == StoryBoard.ShowContentIdentifier {
+            if let contentVC = segue.destination as? ContentViewController {
+                if let indexPath = sender as? IndexPath {
+                    contentVC.talkID = talks[indexPath.row].ID
+                }
+            }
+        }
+    }
     
     // Mark - table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,8 +46,7 @@ class TalkViewController: UITableViewController {
     }
     
     // Mark - table view delegate
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let ID = talks[indexPath.row].ID
-//        performSegue(withIdentifier: StoryBoard.ShowTalksSegueIdentifier, sender: indexPath)
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: StoryBoard.ShowContentIdentifier, sender: indexPath)
+    }
 }

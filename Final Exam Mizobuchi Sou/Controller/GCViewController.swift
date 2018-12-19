@@ -26,7 +26,6 @@ class GCViewController: UITableViewController {
         if segue.identifier == StoryBoard.ShowTalksSegueIdentifier {
             if let talkVC = segue.destination as? TalkViewController {
                 if let indexPath = sender as? IndexPath {
-                    print(gcs[indexPath.row].ID)
                     talkVC.gcID = gcs[indexPath.row].ID
                 }
             }
